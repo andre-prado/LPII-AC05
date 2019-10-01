@@ -14,10 +14,10 @@ class Cachorro(Mamifero):
         self.raca = raca
 
     def latir(self):
-        return '{} está latindo'.format(self.nome)
+        return '{} latindo'.format(self.nome)
 
     def rosnar(self):
-        return '{} está rosnando'.format(self.nome)
+        return '{} rosnando'.format(self.nome)
 
 
 class Gato(Mamifero):
@@ -30,7 +30,7 @@ class Gato(Mamifero):
         self.vida = 7
 
     def miar(self):
-        return '{} está miando'.format(self.nome)
+        return '{} miando'.format(self.nome)
 
     def morrer(self):
         if self.vida == 0:
@@ -38,3 +38,19 @@ class Gato(Mamifero):
         else:
             self.vida -= 1
             return '{} tem {} vida(s) sobrando'.format(self.nome, self.vida)
+
+
+class Cavalo(Mamifero):
+    def __init__(self, nome, cor_pelo, idade, tipo_pata, cor_crina):
+        super().__init__(nome, cor_pelo, idade, tipo_pata)
+        self.nome = nome
+        self.cor_pelo = cor_pelo
+        self.idade = idade
+        self.tipo_pata = tipo_pata
+        self.cor_crina = cor_crina
+
+    def galopar(self):
+        return '{} galopando'.format(self.nome)
+
+    def relinchar(self):
+        return '{} relinchando'.format(self.nome)
