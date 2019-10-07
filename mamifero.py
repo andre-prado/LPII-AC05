@@ -5,7 +5,7 @@ class Mamifero:
         self.idade = idade
         self.tipo_pata = tipo_pata
 
-    def correr(self):
+    def mover(self):
         return ' {} correndo'.format(self.nome)
 
     def mamar(self):

@@ -54,3 +54,19 @@ class Cavalo(Mamifero):
 
     def relinchar(self):
         return '{} relinchando'.format(self.nome)
+
+
+class Canguru(Mamifero):
+    def mover(self):
+        return '{} está saltando'.format(self.nome)
+
+
+class Baleia(Mamifero):
+    def mover(self):
+        return '{} está nadando'.format(self.nome)
+
+
+c1 = Canguru('Elliot', 'Marrom', 3, 'grande')
+b1 = Baleia('Wilie', 'azul', 5, 'nadadeiras')
+print(c1.mover())
+print(b1.mover())
